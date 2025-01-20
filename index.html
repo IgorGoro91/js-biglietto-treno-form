@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglieto di treni JSt</title>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<form action="">
+    <div class="titolo1">
+        <h1>Ralcola il prezzo del tuo biglieto</h1>
+    </div>
+    
+    <div class="box_biglieto">
+
+        <div class="container">
+
+            <div class="nome">
+                <h4>Nome Cognome</h4>
+                <input class="nome_cognome" type="text">
+            </div>
+    
+            <div class="km">
+                <h4>KM da percorrere</h4>
+                <input class="km_percorsi" type="text" name="" id="">
+            </div>
+    
+            <div class="eta">
+                <h4>Fascia d'età</h4>
+                <select name="" id="">
+                    <option class="maggiorenne" value="">Maggiorenne</option>
+                    <option class="minorenne" value="">Minorenne</option>
+                    <option class="over_65" value="">Over 65 anni</option>
+    
+                </select>
+            </div>
+            
+           
+            
+    
+        </div>
+
+        <div class="tasti">
+            <button class="btn_genera"><strong>Genera</strong></button>
+            <button class="btn_annulla"><strong>Annulla</strong></button>
+        </div>
+    
+    </div>
+
+    <div class="titolo1">
+        <h1>Il tuo biglieto</h1>
+    </div>
+
+
+
+    <div class="box_biglieto_prezzo">
+        <div>
+            <h2>Dettaglio passeggero</h2>
+        <hr>
+        </div>
+
+        <div class="container_biglietto">
+            <div class="nome_passeggero">
+                <h3>Nome Passeggiero</h3>
+                <strong class="passagiero"></strong>
+            </div>
+
+            <div class="tabella">
+                <table>
+                    <tr>
+                        <th>Offerta</th>
+                        <th>Carroza</th>
+                        <th>Codice CP</th>
+                        <th>Costo Biglietto</th>
+                    </tr>
+
+                    <tr>
+                        <td>Biglietto standart</td>
+                        <td class="carroza"></td>
+                        <td class="codiceCP"></td>
+                        <td class="prezzpTotale"></td>
+                    </tr>
+
+                </table>
+                
+            </div>
+            
+        </div>
+        
+        <hr>
+
+    </div>
+
+    
+</form>   
+
+    <script src="./Treni.js"></script>
+</body>
+</html>

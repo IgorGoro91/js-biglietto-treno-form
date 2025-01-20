@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #B91450;
+}
+h1{
+    color: white;
+}
+
+.titolo1{
+    text-align: center;
+    padding: 20px;
+}
+
+.box_biglieto,
+.box_biglieto_prezzo{
+    background-color: white;
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+}
+.box_biglieto_prezzo{
+    padding: 20px;
+    /* display: none; */
+}
+.nome_passeggero{
+    background-color: lightgrey;
+    padding: 10px;
+}
+.container{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+    padding: 10px;
+    
+    
+}
+.container h4{
+    padding: 10px 0;
+    
+}
+.container input, select{
+    padding: 5px;
+    border-radius: 5px;
+    border-color: palevioletred;
+}
+
+.tasti{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.tasti button{
+    font-size: 20px;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    color: palevioletred;
+}
+
+.container_biglietto{
+    display: flex;
+    padding: 10px 0;
+    gap: 100px;
+    
+    
+}
+tr th{
+    padding: 10px 20px;
+    text-align: left;
+}
+tr td{
+    padding: 20px;
+}
