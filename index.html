@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-<form action="">
+
     <div class="titolo1">
         <h1>Ralcola il prezzo del tuo biglieto</h1>
     </div>
@@ -17,22 +17,22 @@
 
         <div class="container">
 
-            <div class="nome">
+            <div class="nomecognome">
                 <h4>Nome Cognome</h4>
-                <input class="nome_cognome" type="text">
+                <input id="nome" type="text">
             </div>
     
-            <div class="km">
+            <div class="">
                 <h4>KM da percorrere</h4>
-                <input class="km_percorsi" type="text" name="" id="">
+                <input  type="number" name="" id="km">
             </div>
     
             <div class="eta">
                 <h4>Fascia d'età</h4>
-                <select name="" id="">
+                <select name="eta" id="fascia-eta">
                     <option class="maggiorenne" value="">Maggiorenne</option>
                     <option class="minorenne" value="">Minorenne</option>
-                    <option class="over_65" value="">Over 65 anni</option>
+                    <option class="over65" value="">Over 65 anni</option>
     
                 </select>
             </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="tasti">
-            <button class="btn_genera"><strong>Genera</strong></button>
+            <button class="btn" id="bottone"><strong>Genera</strong></button>
             <button class="btn_annulla"><strong>Annulla</strong></button>
         </div>
     
@@ -55,16 +55,16 @@
 
 
 
-    <div class="box_biglieto_prezzo">
+    <div class="box_biglieto_prezzo" >
         <div>
             <h2>Dettaglio passeggero</h2>
         <hr>
         </div>
 
         <div class="container_biglietto">
-            <div class="nome_passeggero">
+            <div class="nome-passeggero">
                 <h3>Nome Passeggiero</h3>
-                <strong class="passagiero"></strong>
+                <strong id="passeggero"></strong>
             </div>
 
             <div class="tabella">
@@ -77,10 +77,10 @@
                     </tr>
 
                     <tr>
-                        <td>Biglietto standart</td>
-                        <td class="carroza"></td>
-                        <td class="codiceCP"></td>
-                        <td class="prezzpTotale"></td>
+                        <td><span id="offerta"></span></td>
+                        <td><span id="carroza"></span></td>
+                        <td><span id="codice"></span></td>
+                        <td><span id="prezzo"></span></td>
                     </tr>
 
                 </table>
@@ -94,7 +94,7 @@
     </div>
 
     
-</form>   
+   
 
     <script src="./Treni.js"></script>
 </body>

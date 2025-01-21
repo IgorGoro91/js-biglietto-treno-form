@@ -1,39 +1,40 @@
+const btn = document.getElementById(`bottone`)
+const prezzo = 0.21
 
-
-
-const prezzoBiglieto = 0.21;
-
-let sconto18 = 0.8;
-let sconto65 = 0.6;
-
-let prezzoTotale;
-
-const nomePassaggeroField = document.getElementById(`nome_cognome`)
-const kmField = document.getElementById(`km_percorsi`)
-const form = document.querySelector(`form`)
-
-const nomePassaggero = document.getElementById(`nome_cognome`)
-const km = document.getElementById(`km_percorsi`)
-
-
-form.addEventListener( `click`, function(){
+btn.addEventListener(`click`, function(){
     
-    nomePassaggero.innerHTML = nomePassaggero.value
-    km.innerHTML = kmField.value
+
+    const nome = document.getElementById(`nome`).value
+    const km = parseInt(document.getElementById(`km`).value)
+    const eta = document.getElementById(`fascia-eta`).value
+
+    console.log(nome, km, eta)
+    
+    const passeggero = document.getElementById(`passeggero`)
+
+    passeggero.innerHTML = nome
+    
+    const offerta = document.getElementById(`offerta`)
+    const carroza = document.getElementById(`carroza`)
+    const codice = document.getElementById(`codice`)
+    const prezzo = document.getElementById(`prezzo`)
+
+    if( eta == "maggiorenne"){
+        offerta.innerHTML = " Biglietto standart"
+        prezzo.innerHTML = (prezzo * km).toFixed(2)
+    }else if ( eta == "minorenne"){
+        offerta.innerHTML = "Bigletto ridotto"
+        prezzo.innerHTML = ((prezzo * km) * 0.80).toFixed(2)
+    }else {
+        offerta.innerHTML = " Over 65 anni"
+        prezzo.innerHTML = (( prezzo * km) * 0.60).toFixed(2)
+    }
+
+    carroza.innerHTML = randomNumber(1,99)
+    codice.innerHTML = randomNumber(1111,9999)
+
 })
 
-
-
-
-// if( eta < minorenne ){
-//     prezzoTotale = (prezzoBiglieto * km) * sconto18
-    
-
-// }else if( eta > maggiorenne){
-//     prezzoTotale = (prezzoBiglieto * km) * sconto65
-
-// }else {
-//     prezzoTotale = (prezzoBiglieto * km)
-// }
-
-
+function randomNumber(min,max){
+    return Math.floor(Math.random() * max) + min;
+}
